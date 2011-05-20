@@ -51,7 +51,7 @@ CLSTList clstNew (void) {
     return list_return;
 }
 
-CLSTList pltCopy (const CLSTList list) {
+CLSTList clstCopy (const CLSTList list) {
     if (list) {
         int i;
         CLSTList list_return = clstNew();
@@ -320,7 +320,7 @@ void clstPrint (const CLSTList list) {
             printf("%i:%p ", i, node_p->element_p);
 
         puts("");
-    }
+    } else printf("(nil)\n");
 }
 
 /* ========================================================================== */
